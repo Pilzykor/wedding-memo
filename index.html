@@ -2,67 +2,138 @@
 <html lang="hr">
 <head>
   <meta charset="UTF-8">
-  <title>Uspomene 💍</title>
+  <title>Ana-Marija & Mario</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f1ec;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 20px;
     }
 
     .card {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
+      background: #5f7f6f;
+      color: white;
+      border-radius: 25px;
+      padding: 35px 25px;
       text-align: center;
-      max-width: 400px;
-      width: 90%;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .subtitle {
+      font-size: 12px;
+      letter-spacing: 2px;
+      opacity: 0.8;
     }
 
     h1 {
-      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+      margin: 10px 0;
+      font-size: 34px;
+      line-height: 1.2;
     }
 
-    p {
-      color: #666;
+    .date {
+      margin: 15px 0;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: #d6c7a1;
+      margin: 15px auto;
+    }
+
+    .desc {
+      font-size: 14px;
+      opacity: 0.9;
+      margin-bottom: 25px;
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 25px;
-      background: #2563eb;
-      color: white;
-      border-radius: 10px;
+      display: block;
+      background: #efe8dc;
+      color: #5f7f6f;
+      padding: 15px;
+      border-radius: 12px;
       text-decoration: none;
+      font-weight: bold;
       font-size: 16px;
+      margin-top: 10px;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      background: #1d4ed8;
+      background: #e2d9c7;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
 <body>
 
-<div class="card">
-  <h1>📸 Podijelite uspomene</h1>
-  <p>Dodajte slike i videe s našeg vjenčanja ❤️</p>
+<div class="container">
+  <div class="card">
 
-  <a class="btn" href="OVDJE_STAVI_DROPBOX_LINK" target="_blank">
-    ⬆️ Dodaj slike i videe
-  </a>
+    <div class="subtitle">POZIVAMO VAS NA NAŠE VJENČANJE</div>
 
-  <p style="margin-top:15px; font-size:12px;">
-    🎉 Najbolja slika večeri osvaja nagradu!
-  </p>
+    <h1>Ana-Marija<br>&<br>Mario</h1>
+
+    <div class="divider"></div>
+
+    <div class="date">30.05.2026.</div>
+
+    <p class="desc">
+      Podijelite uspomene s nama ❤️<br>
+      Dodajte svoje fotografije i videe s vjenčanja
+    </p>
+
+    <!-- 🔴 OVDJE STAVI DROPBOX LINK -->
+    <a href="OVDJE_STAVI_DROPBOX_LINK" target="_blank" class="btn">
+      ⬆️ Dodaj slike i videe
+    </a>
+
+    <div class="note">
+      Nije potrebna prijava • Možete dodati više datoteka
+    </div>
+
+    <div class="footer">
+      🎉 Najbolja fotografija večeri osvaja nagradu!
+    </div>
+
+  </div>
 </div>
 
 </body>
